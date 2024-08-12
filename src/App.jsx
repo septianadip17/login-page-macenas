@@ -65,10 +65,10 @@ function App() {
 
               {/* Footer */}
               <div className="mt-4">
-                <p>
+                <p className="text-sm">
                   by signing in or creating an account, you agree with our{" "}
-                  <span>Terms & Conditions</span> and{" "}
-                  <span className="text-bold">Privacty Statement</span>
+                  <span className="font-medium underline">Terms & Conditions</span> and{" "}
+                  <span className="font-medium underline">Privacty Statement</span>
                 </p>
               </div>
             </div>
