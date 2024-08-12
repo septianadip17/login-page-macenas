@@ -1,4 +1,7 @@
 import rumahSatu from "/public/img/rumah1.jpeg";
+import googleIcon from "/public/icons/google.svg";
+import facebookIcon from "/public/icons/facebook.svg";
+import appleIcon from "/public/icons/apple.svg";
 
 function App() {
   return (
@@ -11,8 +14,8 @@ function App() {
               Sign in or create an account
             </h1>
             <p className="">Welcome back! Please enter your details.</p>
-            <div className="border-black border py-2">
-              <form className="mx-5" action="">
+            <div className="mx-5 border-black border py-2">
+              <form className="" action="">
                 <input
                   className="w-full border my-2 h-10 p-2 rounded-lg"
                   type="text"
@@ -23,8 +26,52 @@ function App() {
                   type="email"
                   placeholder="Email Address"
                 />
-                <button className="w-full  py-2 text-white font-medium text-md bg-gray-800 hover:bg-gray-900" type="button">Continue</button>
+                <button
+                  className="w-full  py-2 text-white font-medium text-md bg-black hover:bg-gray-700"
+                  type="button"
+                >
+                  Continue
+                </button>
+                {/* Horizontal Line */}
+                <div className="w-full mt-4 grid grid-cols-3 items-center text-gray-400">
+                  <hr className="border-gray-400" />
+                  <p className="text-center font-semibold">or</p>
+                  <hr className="border-gray-400" />
+                </div>
               </form>
+
+              {/* Social Media Sign In */}
+              <div className="grid grid-rows-3 text-center items-center">
+                <button
+                  className="w-full flex border rounded-md mt-2 text-center text-black font-medium text-md hover:bg-gray-700"
+                  type="button"
+                >
+                  <img className="w-5" src={googleIcon} alt="google icon" />
+                  Continue with Google
+                </button>
+                <button
+                  className="w-full flex border rounded-md mt-2 text-center text-black font-medium text-md hover:bg-gray-700"
+                  type="button"
+                >
+                  <img className="w-5" src={appleIcon} alt="apple icon" />
+                  Continue with Apple
+                </button>
+                <button
+                  className="w-full flex border rounded-md mt-2 text-center text-black font-medium text-md hover:bg-gray-700"
+                  type="button"
+                >
+                  <img className="w-5" src={facebookIcon} alt="facebook icon" />
+                  Continue with Facebook
+                </button>
+              </div>
+              {/* Footer */}
+              <div className="mt-4">
+                <p>
+                  by signing in or creating an account, you agree with our{" "}
+                  <span>Terms & Conditions</span> and{" "}
+                  <span className="text-bold">Privacty Statement</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
