@@ -68,7 +68,7 @@ function App() {
                 <p className="text-sm">
                   by signing in or creating an account, you agree with our{" "}
                   <span className="font-medium underline">Terms & Conditions</span> and{" "}
-                  <span className="font-medium underline">Privacty Statement</span>
+                  <span className="font-medium underline">Privacy Statement</span>
                 </p>
               </div>
             </div>
