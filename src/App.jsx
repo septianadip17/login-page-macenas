@@ -42,21 +42,21 @@ function App() {
             {/* Social Media Sign In */}
             <div className="grid grid-rows-3 text-center items-center">
               <button
-                className="w-full flex border rounded-md mt-2 text-center text-black font-medium text-md hover:bg-gray-700"
+                className="w-full flex h-10 border rounded-md mt-2 text-center text-black font-medium text-md hover:bg-gray-700 hover:text-white"
                 type="button"
               >
                 <img className="w-5" src={googleIcon} alt="google icon" />
                 Continue with Google
               </button>
               <button
-                className="w-full flex border rounded-md mt-2 text-center text-black font-medium text-md hover:bg-gray-700"
+                className="w-full flex h-10 border rounded-md mt-2 text-center text-black font-medium text-md hover:bg-gray-700 hover:text-white"
                 type="button"
               >
                 <img className="w-5" src={appleIcon} alt="apple icon" />
                 Continue with Apple
               </button>
               <button
-                className="w-full flex border rounded-md mt-2 text-center text-black font-medium text-md hover:bg-gray-700"
+                className="w-full flex h-10 border rounded-md mt-2 text-center text-black font-medium text-md hover:bg-gray-700 hover:text-white"
                 type="button"
               >
                 <img className="w-5" src={facebookIcon} alt="facebook icon" />
