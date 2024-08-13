@@ -1,7 +1,7 @@
-import rumahSatu from "/public/img/rumah1.jpeg";
-import googleIcon from "/public/icons/google.svg";
-import facebookIcon from "/public/icons/facebook.svg";
-import appleIcon from "/public/icons/apple.svg";
+import rumahSatu from "./assets/img/rumah1.jpeg"
+import googleIcon from "./assets/icons/google.svg";
+import facebookIcon from "./assets/icons/facebook.svg";
+import appleIcon from "./assets/icons/apple.svg";
 
 function App() {
   return (
