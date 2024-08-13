@@ -6,10 +6,10 @@ import appleIcon from "/public/icons/apple.svg";
 function App() {
   return (
     <>
-      <div className="w-full flex min-h-screen items-start">
+      <div className="flex min-h-screen items-center justify-center border-red-500 border">
         {/* Form */}
-        <div className="relative w-1/3 mx-20 my-20">
-          <div className="justify-center align-center w-9/12 border border-black">
+        <div className="relative w-2/5 mx-20 my-20 border-red-500 border">
+          <div className="w-9/12 border border-black">
             <h1 className="text-3xl font-medium">
               Sign in or create an account
             </h1>
@@ -76,9 +76,9 @@ function App() {
         </div>
 
         {/* Cover Image */}
-        <div className="relative w-2/3 h-full flex flex-col">
+        <div className="relative w-3/5 h-full flex flex-col mt-2 p-4 border-red-500 border">
           <img
-            className="w-full h-full object-cover rounded-sm"
+            className="w-full h-full object-cover rounded-xl "
             src={rumahSatu}
             alt="Architectural House in front of a Pool"
           />
