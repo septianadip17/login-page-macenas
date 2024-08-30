@@ -14,7 +14,7 @@ const Form = () => {
   };
 
   return (
-    <div className="container flex min-h-screen mx-auto">
+    <div className="w-full flex min-h-screen mx-auto">
       {/* Form Section */}
       <form className="flex items-center justify-center w-2/5 min-h-screen leading-10">
         <div className="w-full p-28">
