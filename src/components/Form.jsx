@@ -6,22 +6,22 @@ import appleIcon from "../assets/icons/apple.svg";
 
 const Form = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center border border-red-500">
+    <div className="container flex min-h-screen mx-auto">
       {/* Form Section */}
-      <div className="relative w-2/5 min-h-screen mx-20 my-20 border border-red-500">
-        <div className="h-screen w-full border border-black p-6">
+      <div className="flex items-center justify-center w-2/5 min-h-screen">
+        <div className="w-full p-24">
           <h1 className="text-3xl font-medium mb-4">
             Sign in or create an account
           </h1>
           <p className="mb-6">Welcome back! Please enter your details.</p>
           <form>
             <input
-              className="w-full h-10 p-2 mb-2 border rounded-lg"
+              className="w-full h-10 p-2 mb-2 border rounded-s-sm"
               type="text"
               placeholder="Name"
             />
             <input
-              className="w-full h-10 p-2 mb-2 border rounded-lg"
+              className="w-full h-10 p-2 mb-2 border rounded-s-sm"
               type="email"
               placeholder="Email Address"
             />
@@ -69,8 +69,8 @@ const Form = () => {
           </div>
 
           {/* Footer */}
-          <div className="mt-4">
-            <p className="text-sm">
+          <div className="mt-4 flex items-center justify-center">
+            <p className="text-md text-center ">
               By signing in or creating an account, you agree to our{" "}
               <span className="font-medium underline">Terms & Conditions</span>{" "}
               and{" "}
@@ -81,9 +81,9 @@ const Form = () => {
       </div>
 
       {/* Cover Image Section */}
-      <div className="relative w-3/5 h-full flex flex-col mt-2 p-4 border border-red-500">
+      <div className="relative w-3/5 h-full flex items-center">
         <img
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-screen object-cover rounded-xl m-2"
           src={rumahSatu}
           alt="Architectural House in front of a Pool"
         />
