@@ -3,12 +3,20 @@ import rumahSatu from "../assets/img/rumah1.jpeg";
 import googleIcon from "../assets/icons/google.svg";
 import facebookIcon from "../assets/icons/facebook.svg";
 import appleIcon from "../assets/icons/apple.svg";
-
+import { GoArrowLeft } from "react-icons/go"
+import { GoArrowRight } from "react-icons/go";
 const Form = () => {
+  const bgStyle = {
+    backgroundImage: `url(${rumahSatu})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
     <div className="container flex min-h-screen mx-auto">
       {/* Form Section */}
-      <div className="flex items-center justify-center w-2/5 min-h-screen leading-10">
+      <form className="flex items-center justify-center w-2/5 min-h-screen leading-10">
         <div className="w-full p-28">
           <h1 className="text-3xl font-medium mb-4">
             Sign in or create an account
@@ -69,24 +77,42 @@ const Form = () => {
           </div>
 
           {/* Footer */}
-          <div className="mt-4 flex items-center justify-center">
-            <p className="text-md text-center ">
+          <footer className="mt-4 flex items-center justify-center leading-5">
+            <p className="text-md text-center">
               By signing in or creating an account, you agree to our{" "}
               <span className="font-medium underline">Terms & Conditions</span>{" "}
               and{" "}
               <span className="font-medium underline">Privacy Statement</span>.
             </p>
-          </div>
+          </footer>
         </div>
-      </div>
+      </form>
 
       {/* Cover Image Section */}
-      <div className="relative w-3/5 h-full flex items-center m-2">
-        <img
-          className="w-full h-screen object-cover rounded-xl "
-          src={rumahSatu}
-          alt="Architectural House in front of a Pool"
-        />
+      <div
+        style={bgStyle}
+        className="container w-3/5 rounded-xl flex flex-col justify-end"
+      >
+        <div className="inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-b-xl p-8">
+          <div className="text-white rounded-lg max-w-lg">
+            <h1 className="text-xl font-semibold mb-4">
+              “The curation is highly focused on design and the scene is a
+              clever marketplace that allows users to replicate the design at
+              home.”
+            </h1>
+            <div className="flex items-center justify-between">
+              <span className="text-sm">Kaiya Carder • Freelancer</span>
+              <div className="flex space-x-4">
+                <button className="bg-secondary text-secondary-foreground p-2 rounded-full hover:bg-secondary/80">
+                  <GoArrowLeft className="w-6 h-6" />
+                </button>
+                <button className="bg-secondary text-secondary-foreground p-2 rounded-full hover:bg-secondary/80">
+                  <GoArrowRight className="w-6 h-6" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
