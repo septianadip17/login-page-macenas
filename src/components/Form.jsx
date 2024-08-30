@@ -8,8 +8,8 @@ const Form = () => {
   return (
     <div className="container flex min-h-screen mx-auto">
       {/* Form Section */}
-      <div className="flex items-center justify-center w-2/5 min-h-screen">
-        <div className="w-full p-24">
+      <div className="flex items-center justify-center w-2/5 min-h-screen leading-10">
+        <div className="w-full p-28">
           <h1 className="text-3xl font-medium mb-4">
             Sign in or create an account
           </h1>
@@ -81,9 +81,9 @@ const Form = () => {
       </div>
 
       {/* Cover Image Section */}
-      <div className="relative w-3/5 h-full flex items-center">
+      <div className="relative w-3/5 h-full flex items-center m-2">
         <img
-          className="w-full h-screen object-cover rounded-xl m-2"
+          className="w-full h-screen object-cover rounded-xl "
           src={rumahSatu}
           alt="Architectural House in front of a Pool"
         />
