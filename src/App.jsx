@@ -1,4 +1,5 @@
 import CreatePassword from "./pages/CreatePassword";
+import EnterOtp from "./pages/EnterOtp";
 import Login from "./pages/login";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Login />
       <CreatePassword />
+      <EnterOtp />
     </>
   );
 }
