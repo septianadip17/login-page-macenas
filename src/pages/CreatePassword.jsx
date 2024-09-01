@@ -2,7 +2,7 @@ import React from "react";
 import rumahDua from "../assets/img/rumah2.jpeg";
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
-const ConfirmPassword = () => {
+const CreatePassword = () => {
   const bgStyle = {
     backgroundImage: `url(${rumahDua})`,
     backgroundSize: "cover",
@@ -79,4 +79,4 @@ const ConfirmPassword = () => {
   );
 };
 
-export default ConfirmPassword;
+export default CreatePassword;
