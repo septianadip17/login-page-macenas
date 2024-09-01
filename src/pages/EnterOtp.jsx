@@ -80,12 +80,11 @@ const EnterOtp = () => {
         <div className="inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-b-xl p-8">
           <div className="text-white rounded-lg max-w-2xl">
             <h1 className="text-3xl font-normal mb-4">
-              “Our stay at Hotel Macenas was absolutely delightful! From the
-              friendly staff to clean and comfortable rooms, it trully exceeded
-              our expectations.”
+              “I am very pleased with the facilities provided by Hotel Macenas.
+              Their spa is the”
             </h1>
             <div className="flex items-center justify-between">
-              <span className="text-normal">Randy Bator • Founder & CEO</span>
+              <span className="text-normal">Kianna Bergson • Artist</span>
               <div className="flex space-x-4">
                 <button className="bg-secondary text-secondary-foreground p-2 rounded-full hover:bg-secondary/80">
                   <GoArrowLeft className="w-6 h-6" />
