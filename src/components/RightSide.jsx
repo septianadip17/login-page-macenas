@@ -16,7 +16,6 @@ const RightSide = () => {
       className="container w-3/5 rounded-xl flex flex-col justify-end m-2"
     >
       {/* Cover Image Section */}
-
       <div className="inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-b-xl p-8">
         <div className="text-white rounded-lg max-w-2xl">
           <h1 className="text-3xl font-normal mb-4">
