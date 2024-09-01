@@ -15,20 +15,21 @@ const SignUp = () => {
       {/* Form Section */}
       <form className="flex items-center justify-center w-2/5 min-h-screen leading-10">
         <div className="w-full p-28">
-          <h1 className="text-3xl font-medium mb-4">
-            Sign in or create an account
-          </h1>
-          <p className="mb-6">Welcome back! Please enter your details.</p>
+          <h1 className="text-3xl font-medium mb-4">Create Password</h1>
+          <p className="mb-6 leading-5">
+            Use a minimm of 10 characters, including upperchase letters,
+            lowercase letters, and numbers.
+          </p>
           <form>
             <input
               className="w-full h-10 p-2 mb-2 border rounded-s-sm"
-              type="text"
-              placeholder="Name"
+              type="password"
+              placeholder="Password"
             />
             <input
               className="w-full h-10 p-2 mb-2 border rounded-s-sm"
-              type="email"
-              placeholder="Email Address"
+              type="password"
+              placeholder="Confirm Password"
             />
             <button
               className="w-full py-2 mb-4 text-white font-medium bg-black hover:bg-gray-700"
@@ -36,14 +37,7 @@ const SignUp = () => {
             >
               Continue
             </button>
-            {/* Horizontal Line */}
-            <div className="w-full grid grid-cols-3 items-center text-gray-400 mb-4">
-              <hr className="border-gray-400" />
-              <p className="text-center font-semibold">or</p>
-              <hr className="border-gray-400" />
-            </div>
           </form>
-
 
           {/* Footer */}
           <footer className="mt-4 flex items-center justify-center leading-5">
