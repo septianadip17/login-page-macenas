@@ -3,8 +3,8 @@ import React from "react";
 
 const FormSection = ({ title, description, children }) => {
   return (
-    <form className="flex items-center justify-center lg:w-2/5 min-h-screen leading-5 border-2 border-purple-500">
-      <div className="w-full p-28 border-2 border-yellow-400">
+    <form className="flex items-center justify-center lg:w-2/5 min-h-screen leading-5 b">
+      <div className="w-full p-28 ">
         <h1 className="text-3xl font-medium mb-4">{title}</h1>
         <p className="mb-6">{description}</p>
         {children}
