@@ -8,11 +8,11 @@ const FormSection = ({ title, description, children }) => {
         <h1 className="text-3xl font-medium mb-4">{title}</h1>
         <p className="mb-6">{description}</p>
         {children}
-        <footer className="mt-4 flex items-center justify-normal leading-5">
-          <p className="text-md text-center">
+        <footer className="mt-4 flex items-center justify-normal leading-5 ">
+          <p className="text-sm text-center text-gray-600">
             By signing in or creating an account, you agree to our{" "}
-            <span className="font-medium underline">Terms & Conditions</span>{" "}
-            and <span className="font-medium underline">Privacy Statement</span>
+            <span className="font-medium underline text-black">Terms & Conditions</span>{" "}
+            and <span className="font-medium underline text-black">Privacy Statement</span>
             .
           </p>
         </footer>
