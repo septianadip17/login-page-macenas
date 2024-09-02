@@ -13,9 +13,9 @@ const CoverImageSection = ({ backgroundImage, quote, author }) => {
   return (
     <div
       style={bgStyle}
-      className="container w-3/5 rounded-xl flex flex-col justify-end m-2"
+      className="container w-3/5 rounded-xl flex flex-col justify-end m-2 border-2 border-red-500"
     >
-      <div className="inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-b-xl p-8">
+      <div className="inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-b-xl p-8 border-2 border-green-500">
         <div className="text-white rounded-lg max-w-2xl">
           <h1 className="text-3xl font-normal mb-4">“{quote}”</h1>
           <div className="flex items-center justify-between">
