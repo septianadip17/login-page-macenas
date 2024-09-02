@@ -10,11 +10,11 @@ const EnterOtp = () => {
         title="Enter the code"
         description="Enter the OTP code that we sent to your email and be careful not to share the code with anyone."
       >
-        <div className="gap-2 justify-between">
+        <div className="flex gap-2 justify-between">
           {[...Array(5)].map((_, index) => (
             <input
               key={index}
-              className="h-15 p-2 mb-2 size-10 text-center border border-black rounded-s-sm"
+              className="h-15 p-2 mb-5 size-10 text-center font-bold border border-black rounded-s-sm"
               type="text"
               placeholder="0"
             />
@@ -26,7 +26,7 @@ const EnterOtp = () => {
         >
           Continue
         </button>
-        <a href="#" className="text-sm font-semibold text-center underline ">
+        <a href="#" className="text-sm font-semibold text-center underline block">
           Send code again
         </a>
       </FormSection>
