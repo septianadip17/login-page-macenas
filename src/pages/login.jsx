@@ -25,10 +25,10 @@ const Login = () => {
         <InputField type="text" placeholder="Name" />
         <InputField type="email" placeholder="Email Address" />
         <Button onClick={handleContinue}>Continue</Button>
-        <div className="w-full grid grid-cols-3 items-center text-gray-400 mb-4">
-          <hr className="border-gray-400" />
-          <p className="text-center font-semibold">or</p>
-          <hr className="border-gray-400" />
+        <div className="w-full flex items-center text-gray-400 mb-4">
+          <hr className="flex-grow border-gray-400" />
+          <p className="mx-4 text-center font-semibold">or</p>
+          <hr className="flex-grow border-gray-400" />
         </div>
         <div className="grid gap-2 text-center">
           <button
