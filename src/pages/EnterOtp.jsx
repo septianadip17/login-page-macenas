@@ -1,6 +1,7 @@
 import React from "react";
 import FormSection from "../components/FormSection";
 import CoverImageSection from "../components/CoverImageSection";
+import Button from "../components/Button";
 import rumahTiga from "../assets/img/rumah3.jpg";
 
 const EnterOtp = () => {
@@ -14,19 +15,17 @@ const EnterOtp = () => {
           {[...Array(5)].map((_, index) => (
             <input
               key={index}
-              className="h-15 p-2 mb-5 size-10 text-center font-bold border border-black rounded-s-sm"
+              className="h-15 p-2 mb-5 text-center font-bold border border-black rounded-s-sm"
               type="text"
               placeholder="0"
             />
           ))}
         </div>
-        <button
-          className="w-full py-2 mb-4 text-white font-medium bg-black hover:bg-gray-700"
-          type="button"
+        <Button>Continue</Button>
+        <a
+          href="#"
+          className="text-sm font-semibold text-center underline block"
         >
-          Continue
-        </button>
-        <a href="#" className="text-sm font-semibold text-center underline block">
           Send code again
         </a>
       </FormSection>

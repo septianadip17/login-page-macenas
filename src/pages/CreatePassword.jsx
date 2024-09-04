@@ -1,31 +1,27 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import FormSection from "../components/FormSection";
 import CoverImageSection from "../components/CoverImageSection";
+import Button from "../components/Button";
+import InputField from "../components/InputField";
 import rumahDua from "../assets/img/rumah2.jpeg";
 
 const CreatePassword = () => {
+  const navigate = useNavigate();
+
+  const handleContinue = () => {
+    navigate("/enter-otp");
+  };
+
   return (
     <main className="w-full flex min-h-screen mx-auto">
       <FormSection
         title="Create Password"
         description="Use a minimum of 10 characters, including uppercase letters, lowercase letters, and numbers."
       >
-        <input
-          className="w-full h-10 p-2 mb-2 border rounded-s-sm"
-          type="password"
-          placeholder="Password"
-        />
-        <input
-          className="w-full h-10 p-2 mb-2 border rounded-s-sm"
-          type="password"
-          placeholder="Confirm Password"
-        />
-        <button
-          className="w-full py-2 mb-4 text-white font-medium bg-black hover:bg-gray-700"
-          type="button"
-        >
-          Continue
-        </button>
+        <InputField type="password" placeholder="Password" />
+        <InputField type="password" placeholder="Confirm Password" />
+        <Button onClick={handleContinue}>Continue</Button>
       </FormSection>
       <CoverImageSection
         backgroundImage={rumahDua}
