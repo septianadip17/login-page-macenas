@@ -31,18 +31,27 @@ const Login = () => {
           <hr className="border-gray-400" />
         </div>
         <div className="grid gap-2 text-center">
-          <Button>
+          <button
+            className="w-full flex items-center justify-center h-10 border rounded-md text-black font-medium hover:bg-gray-700 hover:text-white"
+            type="button"
+          >
             <img className="w-5 mr-2" src={googleIcon} alt="Google icon" />
             Continue with Google
-          </Button>
-          <Button>
+          </button>
+          <button
+            className="w-full flex items-center justify-center h-10 border rounded-md text-black font-medium hover:bg-gray-700 hover:text-white"
+            type="button"
+          >
             <img className="w-5 mr-2" src={appleIcon} alt="Apple icon" />
             Continue with Apple
-          </Button>
-          <Button>
+          </button>
+          <button
+            className="w-full flex items-center justify-center h-10 border rounded-md text-black font-medium hover:bg-gray-700 hover:text-white"
+            type="button"
+          >
             <img className="w-5 mr-2" src={facebookIcon} alt="Facebook icon" />
             Continue with Facebook
-          </Button>
+          </button>
         </div>
       </FormSection>
       <CoverImageSection
