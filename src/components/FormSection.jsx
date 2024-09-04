@@ -3,19 +3,19 @@ import React from "react";
 
 const FormSection = ({ title, description, children }) => {
   return (
-    <form className="flex items-center justify-center lg:w-2/5 w-full px-4 lg:px-0 min-h-screen">
-      <div className="w-full lg:p-28 p-6">
+    <form className="flex items-center justify-center lg:w-2/5 w-full px-4 lg:px-0 min-h-screen border-4 border-red-600">
+      <div className="w-auto xl:p-16 p-6 border-4 border-green-600">
         <h1 className="text-3xl font-medium mb-4">{title}</h1>
         <p className="mb-6">{description}</p>
         {children}
         <footer className="mt-4 flex items-center justify-center">
           <p className="text-sm text-center text-gray-600">
             By signing in or creating an account, you agree to our{" "}
-            <span className="font-medium underline text-black">
+            <span className="cursor-pointer font-medium underline text-black">
               Terms & Conditions
             </span>{" "}
             and{" "}
-            <span className="font-medium underline text-black">
+            <span className="cursor-pointer font-medium underline text-black">
               Privacy Statement
             </span>
             .
