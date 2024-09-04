@@ -1,14 +1,18 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
 import CreatePassword from "./pages/CreatePassword";
 import EnterOtp from "./pages/EnterOtp";
-import Login from "./pages/login";
 
 function App() {
   return (
-    <>
-      <Login />
-      {/* <CreatePassword />
-      <EnterOtp /> */}
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/create-password" element={<CreatePassword />} />
+        <Route path="/enter-otp" element={<EnterOtp />} />
+      </Routes>
+    </Router>
   );
 }
 
