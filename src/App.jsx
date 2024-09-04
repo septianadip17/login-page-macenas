@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <Login />
-      <CreatePassword />
-      <EnterOtp />
+      {/* <CreatePassword />
+      <EnterOtp /> */}
     </>
   );
 }
