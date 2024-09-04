@@ -27,31 +27,34 @@ const Login = () => {
         <Button onClick={handleContinue}>Continue</Button>
         <div className="w-full flex items-center text-gray-400 mb-4">
           <hr className="flex-grow border-gray-400" />
-          <p className="mx-4 text-center font-semibold">or</p>
+          <p className="mx-2 text-center font-semibold">or</p>
           <hr className="flex-grow border-gray-400" />
         </div>
+        {/* social media login */}
         <div className="grid gap-2 text-center">
-          <button
-            className="w-full flex items-center justify-center h-10 border rounded-md text-black font-medium hover:bg-gray-700 hover:text-white"
-            type="button"
-          >
-            <img className="w-5 mr-2" src={googleIcon} alt="Google icon" />
-            Continue with Google
-          </button>
-          <button
-            className="w-full flex items-center justify-center h-10 border rounded-md text-black font-medium hover:bg-gray-700 hover:text-white"
-            type="button"
-          >
-            <img className="w-5 mr-2" src={appleIcon} alt="Apple icon" />
-            Continue with Apple
-          </button>
-          <button
-            className="w-full flex items-center justify-center h-10 border rounded-md text-black font-medium hover:bg-gray-700 hover:text-white"
-            type="button"
-          >
-            <img className="w-5 mr-2" src={facebookIcon} alt="Facebook icon" />
-            Continue with Facebook
-          </button>
+          {[
+            {
+              src: googleIcon,
+              alt: "Google icon",
+              text: "Continue with Google",
+            },
+            { src: appleIcon, alt: "Apple icon", text: "Continue with Apple" },
+            {
+              src: facebookIcon,
+              alt: "Facebook icon",
+              text: "Continue with Facebook",
+            },
+          ].map(({ src, alt, text }) => (
+            <button
+              key={alt}
+              className="w-full flex items-center justify-center h-10 border rounded-md text-black font-medium hover:bg-gray-700 hover:text-white"
+              type="button"
+            >
+              <img className="w-5 mr-2 hidden sm:block" src={src} alt={alt} />
+              <span className="hidden sm:inline">{text}</span>
+              <img className="w-5 sm:hidden" src={src} alt={alt} />
+            </button>
+          ))}
         </div>
       </FormSection>
       <CoverImageSection
